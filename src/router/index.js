@@ -2,15 +2,16 @@ import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
 import Profile from "../views/Profile.vue";
 import Signin from "../views/Signin.vue";
+import UploadNFT from "../views/Admin/UploadNFT.vue";
 
 const routes = [
   {
     path: "/",
     name: "/",
-    redirect: "/dashboard-default",
+    redirect: "/dashboard",
   },
   {
-    path: "/dashboard-default",
+    path: "/dashboard",
     name: "Dashboard",
     component: Dashboard,
   },
@@ -25,10 +26,14 @@ const routes = [
     component: Signin,
   },
   {
-    path: "",
+    path: "/upload-nft",
+    name: "UploadNFT",
+    component: UploadNFT,
+  },
+  {
+    path: "/:pathMatch(.*)*",
     component: Dashboard,
-  }
-  
+  },
 ];
 
 const router = createRouter({

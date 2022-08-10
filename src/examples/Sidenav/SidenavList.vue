@@ -6,8 +6,8 @@
     <ul class="navbar-nav">
       <li class="nav-item">
         <sidenav-item
-          url="/dashboard-default"
-          :class="getRoute() === 'dashboard-default' ? 'active' : ''"
+          url="/dashboard"
+          :class="getRoute() === 'dashboard' ? 'active' : ''"
           :navText="'Dashboard'"
         >
           <template v-slot:icon>
@@ -20,7 +20,7 @@
           class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
           :class="'ms-2'"
         >
-          ACCOUNT PAGES
+          Admin Panel
         </h6>
       </li>
       <li class="nav-item">

@@ -16,7 +16,8 @@ export default createStore({
     showNavbar: true,
     showFooter: true,
     showMain: true,
-    layout: "default"
+    layout: "default",
+    infoUser: {},
   },
   mutations: {
     toggleConfigurator(state) {
@@ -49,7 +50,7 @@ export default createStore({
   actions: {
     toggleSidebarColor({ commit }, payload) {
       commit("sidebarType", payload);
-    }
+    },
   },
   getters: {}
 });
