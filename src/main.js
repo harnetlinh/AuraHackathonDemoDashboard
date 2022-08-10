@@ -11,10 +11,11 @@ const appInstance = createApp(App);
 appInstance.use(store);
 appInstance.use(router);
 appInstance.use(GAuth, {
-    clientId: '30699706786-ifo2nfhijddjo91ehnemflcfocpov3gg.apps.googleusercontent.com',
+    clientId: '472262699846-vhdb29g3b9hoei4rc6ou45heju9v8mth.apps.googleusercontent.com',
     scope: 'profile email',
     prompt: 'consent', 
-    fetch_basic_profile: false
+    fetch_basic_profile: false,
+    plugin_name: 'Google',
 });
 appInstance.use(ArgonDashboard);
 appInstance.mount("#app");
