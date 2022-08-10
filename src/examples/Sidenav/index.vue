@@ -44,8 +44,8 @@
 </template>
 <script>
 import SidenavList from "./SidenavList.vue";
-import logo from "@/assets/img/logo-ct-dark.png";
-import logoWhite from "@/assets/img/logo-ct.png";
+import logo from "@/assets/img/FPT_logo_2010.svg.png";
+import logoWhite from "@/assets/img/FPT_logo_2010.svg.png";
 
 export default {
   name: "index",

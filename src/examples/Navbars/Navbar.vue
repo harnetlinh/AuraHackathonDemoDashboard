@@ -23,10 +23,8 @@
         <ul class="navbar-nav justify-content-end">
           <li class="nav-item d-flex align-items-center">
             <a
-              href="#"
-              class="px-0 nav-link font-weight-bold text-white"
-              target="_blank"
-            >
+              href="javascript:void(0)"
+              class="px-0 nav-link font-weight-bold text-white">
               <i
                 class="fa fa-user me-sm-2"
               ></i>
@@ -34,13 +32,12 @@
             </a>
           </li>
           <li class="px-3 nav-item d-flex align-items-center">
-            <a class="p-0 nav-link text-white" @click="toggleConfigurator">
-              <i class="cursor-pointer fa fa-cog fixed-plugin-button-nav"></i>
+            <a class="p-0 nav-link text-white" href="/signin">
+              <i class="cursor-pointer fa fa-sign-out fixed-plugin-button-nav"></i>
             </a>
           </li>
           <li
-            class="nav-item dropdown d-flex align-items-center"
-            :class="this.$store.state.isRTL ? 'ps-2' : 'pe-2'"
+            class="nav-item dropdown d-flex align-items-center pe-2"
           >
             <a
               href="#"

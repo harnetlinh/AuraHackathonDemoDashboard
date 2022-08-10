@@ -6,6 +6,7 @@ import "./assets/css/nucleo-icons.css";
 import "./assets/css/nucleo-svg.css";
 import ArgonDashboard from "./argon-dashboard";
 import GAuth from 'vue3-google-oauth2'
+import Notifications from '@kyvg/vue3-notification'
 
 const appInstance = createApp(App);
 appInstance.use(store);
@@ -17,5 +18,6 @@ appInstance.use(GAuth, {
     fetch_basic_profile: false,
     plugin_name: 'Google',
 });
+appInstance.use(Notifications);
 appInstance.use(ArgonDashboard);
 appInstance.mount("#app");

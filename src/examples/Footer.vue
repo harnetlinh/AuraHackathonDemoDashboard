@@ -16,7 +16,7 @@
               target="_blank"
               >FPT Polytechnic</a
             >
-            for a better web.
+            for a better education.
           </div>
         </div>
         <div class="col-lg-6">
@@ -25,15 +25,15 @@
           >
             <li class="nav-item">
               <a
-                href="https://www.creative-tim.com"
+                href="https://caodang.fpt.edu.vn"
                 class="nav-link text-muted"
                 target="_blank"
-                >Creative Tim</a
+                >FPT Polytechnic</a
               >
             </li>
             <li class="nav-item">
               <a
-                href="https://www.creative-tim.com/presentation"
+                href="https://caodang.fpt.edu.vn"
                 class="nav-link text-muted"
                 target="_blank"
                 >About Us</a
@@ -41,18 +41,10 @@
             </li>
             <li class="nav-item">
               <a
-                href="https://www.creative-tim.com/blog"
+                href="https://caodang.fpt.edu.vn"
                 class="nav-link text-muted"
                 target="_blank"
                 >Blog</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                href="https://www.creative-tim.com/license"
-                class="nav-link pe-0 text-muted"
-                target="_blank"
-                >License</a
               >
             </li>
           </ul>

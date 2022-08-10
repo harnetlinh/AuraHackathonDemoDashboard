@@ -27,6 +27,7 @@
     <app-footer v-show="this.$store.state.showFooter" />
     
   </main>
+  <notifications />
 </template>
 <script>
 import Sidenav from "./examples/Sidenav";

@@ -2,7 +2,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import Dashboard from "../views/Dashboard.vue";
 import Profile from "../views/Profile.vue";
 import Signin from "../views/Signin.vue";
-import UploadNFT from "../views/Admin/UploadNFT.vue";
+import ListNFT from "../views/ListNFT.vue";
 
 const routes = [
   {
@@ -26,9 +26,9 @@ const routes = [
     component: Signin,
   },
   {
-    path: "/upload-nft",
+    path: "/nft-management",
     name: "UploadNFT",
-    component: UploadNFT,
+    component: ListNFT,
   },
   {
     path: "/:pathMatch(.*)*",

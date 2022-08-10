@@ -25,12 +25,43 @@
       </li>
       <li class="nav-item" v-if="isAdmin">
         <sidenav-item
-          url="/profile"
-          :class="getRoute() === 'profile' ? 'active' : ''"
-          :navText="this.$store.state.isRTL ? 'حساب تعريفي' : 'Profile'"
+          url="/nft-management"
+          :class="getRoute() === 'nft-management' ? 'active' : ''"
+          navText="NFT Manager"
         >
           <template v-slot:icon>
             <i class="ni ni-single-02 text-dark text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="/x"
+          navText="Create Public Address"
+        >
+          <template v-slot:icon>
+            <i class="ni ni-air-baloon text-primary text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="/y"
+          navText="Blockchain Tutorials"
+        >
+          <template v-slot:icon>
+            <i class="ni ni-books text-primary text-sm opacity-10"></i>
+          </template>
+        </sidenav-item>
+      </li>
+      <li class="nav-item">
+        <sidenav-item
+          url="https://docs.aura.network/"
+          navText="Aura Network Document"
+          target="_blank"
+        >
+          <template v-slot:icon>
+            <i class="ni ni-atom text-primary text-sm opacity-10"></i>
           </template>
         </sidenav-item>
       </li>

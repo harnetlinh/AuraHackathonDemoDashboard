@@ -4,15 +4,15 @@
       <div class="carousel-inner border-radius-lg h-100">
         <div
           class="carousel-item h-100 active"
-          :style="{backgroundImage: 'url(' + require('@/assets/img/carousel-1.jpg') + ')',
+          :style="{backgroundImage: 'url(https://vnreport.vn/wp-content/uploads/2022/04/aura-network-1536x802.png)',
       backgroundSize: 'cover'}"
         >
           <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
             <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
               <i class="ni ni-camera-compact text-dark opacity-10"></i>
             </div>
-            <h5 class="text-white mb-1">Get started with Argon</h5>
-            <p>There’s nothing I really wanted to do in life that I wasn’t able to get good at.</p>
+            <!-- <h5 class="text-white mb-1">Aura Network</h5>
+            <p>Building the Internet of NFTs.</p> -->
           </div>
         </div>
         <div
@@ -24,21 +24,8 @@
             <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
               <i class="ni ni-bulb-61 text-dark opacity-10"></i>
             </div>
-            <h5 class="text-white mb-1">Faster way to create web pages</h5>
-            <p>That’s my skill. I’m not really specifically talented at anything except for the ability to learn.</p>
-          </div>
-        </div>
-        <div
-          class="carousel-item h-100"
-          :style="{backgroundImage: 'url(' + require('@/assets/img/carousel-3.jpg') + ')',
-      backgroundSize: 'cover'}"
-        >
-          <div class="carousel-caption d-none d-md-block bottom-0 text-start start-0 ms-5">
-            <div class="icon icon-shape icon-sm bg-white text-center border-radius-md mb-3">
-              <i class="ni ni-trophy text-dark opacity-10"></i>
-            </div>
-            <h5 class="text-white mb-1">Share with us your design tips!</h5>
-            <p>Don’t be afraid to be wrong because you can’t learn anything from a compliment.</p>
+            <h5 class="text-white mb-1">FPT Polytechnic</h5>
+            <p>The best Education Vietnam.</p>
           </div>
         </div>
       </div>
