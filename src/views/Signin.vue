@@ -113,6 +113,10 @@ export default {
     this.$store.state.showFooter = true;
     body.classList.add("bg-gray-100");
   },
+  mounted(){
+    localStorage.removeItem("user");
+    localStorage.removeItem("isAdmin");
+  },
    methods: {
     async handleClickSignIn(){
       try {
@@ -120,15 +124,27 @@ export default {
         if (!googleUser) {
           return null;
         }
-        console.log("googleUser", googleUser);
         this.user = googleUser.getBasicProfile().getEmail();
-        console.log("getId", this.user);
-        console.log("getBasicProfile", googleUser.getBasicProfile());
-        console.log("getAuthResponse", googleUser.getAuthResponse());
-        console.log(
-          "getAuthResponse",
-          this.$gAuth.instance.currentUser.get().getAuthResponse()
-        );
+        let userLogin = this.user.split('@')[0];
+
+        if(userLogin == 'tuhd4'){
+          localStorage.setItem('isAdmin', 1);
+          localStorage.setItem("user", 'tuhd4');
+          this.$router.push('/dashboard');
+          return;
+        }
+
+        if(userLogin == 'linhhn13'){
+          localStorage.setItem('isAdmin', 1);
+          localStorage.setItem("user", 'linhhn13');
+          this.$router.push('/dashboard');
+          return;
+        }
+
+        let userCode = userLogin.substr(userLogin.length - 7 , 7);
+        userCode = userCode.toUpperCase();
+        localStorage.setItem("user", userCode);
+        this.$router.push('/dashboard');
       } catch (error) {
         //on fail do something
         console.error(error);

@@ -15,7 +15,7 @@
           </template>
         </sidenav-item>
       </li>
-      <li class="mt-3 nav-item">
+      <li class="mt-3 nav-item" v-if="isAdmin">
         <h6
           class="text-xs ps-4 text-uppercase font-weight-bolder opacity-6"
           :class="'ms-2'"
@@ -23,7 +23,7 @@
           Admin Panel
         </h6>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" v-if="isAdmin">
         <sidenav-item
           url="/profile"
           :class="getRoute() === 'profile' ? 'active' : ''"
@@ -49,11 +49,15 @@ export default {
     return {
       title: "Argon Dashboard 2",
       controls: "dashboardsExamples",
-      isActive: "active"
+      isActive: "active",
+      isAdmin: false,
     };
   },
   components: {
     SidenavItem,
+  },
+  mounted(){
+    this.isAdmin = localStorage.getItem("isAdmin") ?? false;
   },
   methods: {
     getRoute() {
